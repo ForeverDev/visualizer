@@ -151,7 +151,7 @@ void draw() {
 		float freq = sound_info[i][1];
 		
 		/* tween the bands 20% towards half of the highest band */
-		sound_info[i][0] += ((maxband/2) - sound_info[i][0]) * 0.4;
+		sound_info[i][0] += ((maxband/2) - sound_info[i][0]) * 0.3;
 
 		if (abs(ramp[i][0] - sound_info[i][0]) < step) {
 			ramp[i][0] = sound_info[i][0];
